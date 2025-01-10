@@ -1,0 +1,33 @@
+@use "../util/" as *;
+
+* {
+  transition: all ease 0.5s;
+}
+
+body {
+  background-color: $bg;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.cards {
+  margin: 15% 5% 5%;
+  @include toGrid();
+
+  @include breakpoint(medium) {
+    margin: 8%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include breakpoint(large) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}

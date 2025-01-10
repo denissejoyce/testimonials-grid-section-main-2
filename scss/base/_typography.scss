@@ -1,0 +1,34 @@
+@use "../util/" as *;
+
+body {
+  color: $font;
+  font-family: "Barlow Semi Condensed", serif;
+  font-size: 13px;
+  font-weight: 500;
+
+  .attribution,
+  .card:nth-child(3),
+  .card:last-child {
+    color: $dark-gray-card;
+  }
+
+  .user__verified {
+    margin-top: -5px;
+    opacity: 50%;
+  }
+
+  .quote {
+    font-size: 21.5px;
+    font-weight: 600;
+    line-height: 1.15;
+  }
+
+  .quote::before,
+  .quote::after {
+    content: " ";
+  }
+
+  .review {
+    opacity: 70%;
+  }
+}

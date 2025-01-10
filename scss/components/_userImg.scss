@@ -1,0 +1,19 @@
+@use "../util/" as *;
+
+.img {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+
+.img--white {
+  border: 2px solid $white-card;
+}
+
+.img--dark {
+  border: 2px solid $violet-card;
+}
+
+.img--light {
+  border: 2px solid hsl(0, 0%, 81%, 0.7);
+}
