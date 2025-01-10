@@ -3,7 +3,7 @@
 body {
   color: $font;
   font-family: "Barlow Semi Condensed", serif;
-  font-size: 13px;
+  font-size: clamp(0.75rem, 3.467vw, 1rem);
   font-weight: 500;
 
   .attribution,
@@ -13,12 +13,12 @@ body {
   }
 
   .user__verified {
-    margin-top: -5px;
+    margin-top: -0.313em;
     opacity: 50%;
   }
 
   .quote {
-    font-size: 21.5px;
+    font-size: clamp(1.244rem, 5.733vw, 1.55rem);
     font-weight: 600;
     line-height: 1.15;
   }
